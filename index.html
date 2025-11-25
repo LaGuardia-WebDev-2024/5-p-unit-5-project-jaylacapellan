@@ -75,9 +75,12 @@ Select TWO Additional Features to Add
     }
 
     .flip-card-back {
-      background-color:rgb(219, 219, 213);
-      color: white;
+      background-color:rgb(58, 9, 26);
+      color: antiquewhite;
       transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     #first {
       font-size:xx-large;
@@ -85,12 +88,28 @@ Select TWO Additional Features to Add
       text-decoration: underline;
 
     }
+    a {
+      color:antiquewhite
+    }
+    #card2 {
+      background-color:rgb(201, 185, 173);
+      color: #665847;
+    }
+    .link2 {
+      color: #665847
+    }
+    .intro {
+      color: aliceblue;
+    }
+
   </style>
 </head>
 <body>
   <br>
   <h1>CHRISTMAS</h1>
-  <p></p>
+  <span class="intro">
+  <p>Christmas is one of the best holidays to ever exist! You get thanksgiving food with snow, gifts and santa claus!</p>
+  </span>
 
  <div class="flip-card">
   <div class="flip-card-inner">
@@ -98,10 +117,27 @@ Select TWO Additional Features to Add
       <img src="https://www.jwpei.com/cdn/shop/files/2T267-3-FRONT.jpg?v=1753932568&width=1920" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
-      <br>
+            <div>
       <p id="first">Yara Shoulder Bag</p> 
-      <p>Architect & Engineer</p> 
-      <p>link: https://www.jwpei.com/products/yara-shoulder-bag-dark-brown</p>
+      <p>a brown leather shoulder bag</p> 
+      <p><a id="1" target="_blank" href="//www.jwpei.com/products/yara-shoulder-bag-dark-brown">link!</a></p>
+            </div>
+    </div>
+  </div>
+</div>
+
+
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://coach.scene7.com/is/image/Coach/cw870_imxhe_a0?$desktopProduct$" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back" id="card2">
+            <div>
+      <p id="first">Mini Wallet</p> 
+      <p>color: signature canvas/gold/tan/brown</p> 
+      <p><a class="link2" target="_blank" href="https://www.coachoutlet.com/products/mini-skinny-id-case-in-signature-canvas/CW870-IMXHE.html">link!</a></p>
+            </div>
     </div>
   </div>
 </div>
