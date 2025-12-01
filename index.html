@@ -6,7 +6,7 @@ Requirements
 
 Select TWO Additional Features to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
 [ no ] Feature 5 - Use a .Gif
@@ -91,15 +91,22 @@ Select TWO Additional Features to Add
     a {
       color:antiquewhite
     }
-    #card2 {
-      background-color:rgb(201, 185, 173);
-      color: #665847;
-    }
-    .link2 {
-      color: #665847
-    }
     .intro {
-      color: aliceblue;
+      color: rgb(3, 73, 12);
+      font-size: larger;
+    }
+    .text-box {
+      border: 5px dotted  rgb(3, 73, 12);
+      padding: 20px;
+      background-color: #e9ecee;
+      width: 20%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .flexbox {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
 
   </style>
@@ -108,9 +115,11 @@ Select TWO Additional Features to Add
   <br>
   <h1>CHRISTMAS</h1>
   <span class="intro">
-  <p>Christmas is one of the best holidays to ever exist! You get thanksgiving food with snow, gifts and santa claus!</p>
+    <div class="text-box">
+  <p>Christmas is one of the best holidays to ever exist! You get thanksgiving food with snow, gifts and santa claus! In honor of the giving and celebratory holiday, here are some things that would make my Christmas better!</p>
+    </div>
   </span>
-
+        <div class="flexbox">
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -142,5 +151,20 @@ Select TWO Additional Features to Add
   </div>
 </div>
 
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://ottaviaofficial.com/cdn/shop/files/Artboard2.png?v=1746633841&width=375" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back" id="card2">
+            <div>
+      <p id="first">Suede Tote Bag</p> 
+      <p>I would just want any suede tote bag that is kind of saggy. It can be any shade of brown, any brand!</p> 
+            </div>
+    </div>
+  </div>
+</div>
+        </div>
 </body>
 </html>
